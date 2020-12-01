@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title> Coin Jar</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="Images/Favicon.png" sizes="180x180">
+    <link rel="icon" href="Images/Favicon.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="Images/Favicon.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="Images/Favicon.png">
+
+
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/toastr.css" rel="stylesheet" />
+    <link href="Content/AppStyle/app.css" rel="stylesheet" />
+    <link href="Content/AppStyle/carousel.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+</head>
+<body data-new-gr-c-s-check-loaded="14.984.0" data-gr-ext-installed="">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg_Nav">
+            <a class="navbar-brand" href="#">
+                <img src="Images/logo.png" class="logo" alt="logo_image" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--<div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>-->
+        </nav>
+    </header>
+
+    <main role="main">
+
+        <div class="container Coins">
+            <div class="row">
+                <div class="col-lg-10">
+                    <h1 class="featurette-heading"> Select a coin to add in Jar</h1>
+                </div>
+            </div>
+            <div class="space_4"></div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="Images/Penny.jpg" alt="Penny" class="rounded-circle img_coin sticker" id="coin_penny" onclick="AddCoin(1)"/>
+                            <div class="amount_title">Add a Penny: &#36;0.01 </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="Images/Nickel.jpg" alt="Nickel" class="rounded-circle img_coin sticker" id="coin_nickel" onclick="AddCoin(2)"/>
+                            <div class="amount_title">Add a Nickel: &#36;0.05 </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="Images/Dime.jpg" alt="Dime" class="rounded-circle img_coin sticker" id="coin_dime" onclick="AddCoin(3)"/>
+                            <div class="amount_title">Add a Dime: &#36;0.10 </div>
+
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="Images/Quarter.jpg" alt="Quarter" class="rounded-circle img_coin sticker" id="coin_quarter" onclick="AddCoin(4)"/>
+                            <div class="amount_title">Add a Quarter: &#36;0.25 </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="Images/Half_Dollar.jpg" alt="Half Dollar" class="rounded-circle img_coin sticker" id="coin_halfdollar" onclick="AddCoin(5)"/>
+                            <div class="amount_title">Add a Half Dollar: &#36;0.50 </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="Images/Dollar.jpg" alt="Dollar" class="rounded-circle img_coin sticker" id="coin_dollar" onclick="AddCoin(6)"/>
+                            <div class="amount_title">Add a Dollar: &#36;1.00 </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h2 class="amount_heading">Total in Jar</h2>
+                    <div class="amount_total">&#36;<span id="amount"></span> </div>
+                    <div class="space_5"></div>
+                    <div>
+                        <button id="reset_jar" onclick="ResetJar()" class="btn btn-outline-secondary btn_cus_sec">Reset Jar <span class="mdi mdi-restart"></span></button>
+                    </div>
+                </div>
+
+            </div>
+            <hr class="featurette-divider">
+
+
+
+        </div>
+        <footer class="container">
+            <p>©2020 All Rights Reservesd, <a href="https://www.linkedin.com/in/nzam-pistis/" target="_blank">Nzam Pistis Sangolo</a></p>
+        </footer>
+    </main>
+
+    <script src="Scripts/jquery-3.5.1.min.js"></script>
+    <script src="Scripts/bootstrap.bundle.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/toastr.js"></script>
+    <script src="Scripts/toastr.min.js"></script>
+    <script src="Scripts/AppScripts/app.js"></script>
+
+</body>
+</html>
